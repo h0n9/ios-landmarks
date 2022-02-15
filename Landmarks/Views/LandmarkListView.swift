@@ -13,6 +13,8 @@ struct LandmarkListView: View {
             List(landmarks) { landmark in
                 NavigationLink {
                     LandmarkDetailView(landmark: landmark)
+                        .navigationTitle(landmark.name)
+                        .navigationBarTitleDisplayMode(.large)
                 } label: {
                     LandmarkRowView(landmark: landmark)
                 }
