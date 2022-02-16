@@ -20,6 +20,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     // read from json file but unused in public
     private var imageName: String
